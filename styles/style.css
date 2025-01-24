@@ -147,6 +147,21 @@ nav{
     text-decoration: none;
     color: white;
     font-weight: 400;
+}
+.quotation-section{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgb(234, 249, 241);
+    border-radius: 10px;
+    
+}
+.quote-info{
+    background: url(/assets/quote-bg.png);
+    background-repeat: no-repeat;
+    font-size: 14px;
+    opacity: 70%;
+    word-break: 20px;
+    line-height: 20px;
 } 
 
 
