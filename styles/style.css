@@ -155,14 +155,50 @@ nav{
     border-radius: 10px;
     
 }
+.quotation-section .rank{
+    font-size: 12px;
+    opacity: 60%;
+}
 .quote-info{
     background: url(/assets/quote-bg.png);
     background-repeat: no-repeat;
-    font-size: 14px;
+    font-size: 12px;
     opacity: 70%;
     word-break: 20px;
     line-height: 20px;
+}
+.opinion{
+    background: rgb(238, 243, 243);
+    padding: 20px 50px;
+    margin-top: 50px;
+    border-radius: 10px;
 } 
+table{
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+}
+thead{
+    background-color: 
+    hsla(120, 73%, 75%, 0.368);
+    font-size: 14px;
+}
+thead tr th{
+    padding: 10px;
+}
+th, td{
+    border: 1.5px solid gainsboro;
+}
+tbody tr td{
+    padding: 15px;
+}
+select{
+    background: hsla(120, 73%, 75%, 0.368);
+}
+form{
+    width: 50%;
+    margin: 0px auto;
+}
 
 
 
@@ -235,7 +271,22 @@ nav{
     }    
     .vision-card > .card-3{
         padding: 10px;
-    }               
+    }
+    .opinion{
+        padding: 10px 20px;
+        margin-top: 20px;
+    }    
+    thead tr th{
+        padding: 8px;
+    }    
+    tbody tr td{
+        padding: 8px;
+    }    
+    form{
+        width: 90%;
+        margin: 0px auto;
+    }
+                   
 }
 
 
@@ -313,5 +364,19 @@ nav{
         width: 200px;
         height: 120px;
         border-radius: 5px;
+    }
+    .opinion{
+        padding: 15px 30px;
+        margin-top: 30px;
+    }    
+    thead tr th{
+        padding: 10px;
+    }    
+    tbody tr td{
+        padding: 10px;
+    }    
+    form{
+        width: 90%;
+        margin: 0px auto;
     }
 }
