@@ -74,7 +74,7 @@ nav{
     margin-top: 20px;
 }
 .pillar-card div{
-    background:rgb(244, 244, 164);
+    background: cornsilk;
     padding: 10px;
     border-radius: 10px;
 }
@@ -202,26 +202,133 @@ form{
 .recent-news{
     width: 100%;
 }
+.recent-info, .news-time, .news-info, .donate-info{
+    font-size: 12px;
+    text-align: justify;
+}
 .news{
     display: flex;
     background: rgb(238, 243, 243);
     margin-bottom: 50px;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 50px;
     gap: 50px;
+    box-shadow: 2px 0 5px 2px burlywood;
 }
-.news-container{
-    
-}
+
 .news .news-img{
     width: 40%;
 }
 .news .news-img img{
     width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 .news .news-content{
     width: 60%;
 }
+.news .news-btn{
+    background: darkgreen;
+    color: white;
+    border: none;
+    font-weight: 500;
+    padding: 4px 14px;
+    border-radius: 5px;
+}
+.donate{
+    background: antiquewhite;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.donate-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
+.donate-card div{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.donate-card div span{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.donate input{
+    width: calc(100% - 20px);
+    height: 40px;
+    background: white;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;        
+}
+
+.donate .donate-card :hover{
+    background: lightgreen;
+}
+.donate-down .donate-btn{
+    background: darkgreen;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.subscription{
+    background: antiquewhite;
+    text-align: center;
+    padding: 30px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.subscription p{
+    font-size: 12px;
+}
+.subscription div{
+    margin: 20px 0px;
+}
+.subscription .text-area{
+    width: 50%;
+    height: 40px;
+    border: none;
+    background: white;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.subscribe-btn{
+    height: 40px;
+    border: none;
+    background: white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-weight: 600;
+    color: white;
+    background: darkgreen;
+
+}
+.footer-bottom{
+    margin: 50px auto;
+    width: 90%;
+    justify-items: center;
+}
+.footer-bottom p{
+    border: 0.75px solid rgba(221, 215, 215, 0.934);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-bottom-anchor > a{
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+
 
 
 
@@ -295,6 +402,9 @@ form{
     .vision-card > .card-3{
         padding: 10px;
     }
+    .quotation-section{
+        margin-top: 20px;
+    }
     .opinion{
         padding: 10px 20px;
         margin-top: 20px;
@@ -309,8 +419,85 @@ form{
         width: 90%;
         margin: 0px auto;
     }
-                   
+    .news{
+        flex-direction: column;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 1px 0 5px 2px burlywood;
+    }
+    .news .news-img{
+        width: 100%;
+    }
+    .news .news-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .news .news-content{
+        width: 100%;
+    }
+    .news .news-btn{
+        padding: 4px 10px;
+    }
+    .donate{
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .donate-card{
+        margin-top: 20px;
+        width: 50%;
+        flex-direction: column;
+        margin: 0 auto;
+        row-gap: 10px;
+    }
+    .donate-card div{
+        padding: 5px;
+        text-align: center;
+
+    }
+    .donate-card div .donate-card-data{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .donate input{
+        width: calc(100% - 10px);
+        height: 30px;
+        background: white;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 10px;        
+        
+    }
+    .subscription{
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    
+    .subscription div{
+        margin: 10px 0px;
+    }
+    .subscription .text-area{
+        width: 60%;
+        height: 30px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .subscribe-btn{
+        height: 30px;
+        padding: 0px 10px;
+        font-weight: 500;
+    
+    }
+    .footer-bottom-anchor > a{
+        margin-left: 10px;
+    }
+                                   
 }
+
 
 
 
@@ -402,4 +589,50 @@ form{
         width: 90%;
         margin: 0px auto;
     }
+    .news{
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding: 30px;
+        box-shadow: 1px 0 5px 2px burlywood;
+    }
+    .news .news-img{
+        width: 100%;
+    }
+    .news .news-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 14px;
+    }
+    .news .news-content{
+        width: 100%;
+    }
+    .news .news-btn{
+        padding: 8px 12px;
+    }
+    .donate{
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+    .donate-card{
+        margin-top: 30px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        column-gap: 20px;
+        row-gap: 20px
+        ;
+    }
+    .donate-card div{
+        padding: 5px;
+        text-align: center;
+    }
+    .donate-card div .donate-card-data{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .footer-bottom-anchor > a{
+        margin-left: 20px;
+    }    
+   
 }
